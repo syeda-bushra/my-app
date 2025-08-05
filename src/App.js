@@ -1,26 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import dynasoftLogo from './dynasoft.png'; 
 
-function App() {
+function WelcomeMessage() {
+  const [showThanks, setShowThanks] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowThanks(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={dynasoftLogo} className="App-logo" alt="DynaSoft Cloud" />
-        <p>
-          Welcome to DynaSoft Cloud.
-        </p>
-        <a
-          className="App-link"
-          href="https://dynasoft.com" 
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Website
-        </a>
-      </header>
+    <div className="centered-container">
+      <p>Welcome!</p>
+      {showThanks && <p>Thanks for visiting!</p>}
     </div>
   );
 }
 
-export default App;
+export default WelcomeMessage;
