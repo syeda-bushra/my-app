@@ -1,23 +1,54 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function WelcomeMessage() {
-  const [showThanks, setShowThanks] = useState(false);
+function App() {
+  const [inputText, setInputText] = useState('');
+  const [delayedText, setDelayedText] = useState('');
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowThanks(true);
+      setDelayedText(inputText);
     }, 3000);
 
     return () => clearTimeout(timer);
-  });
+  }, [inputText]);
+
+
+
+  const handleRemove = () => 
+    setInputText('');
+  const handleUpperCase = () => 
+    setInputText(inputText.toUpperCase());
+  const handleLowerCase = () => 
+    setInputText(inputText.toLowerCase());
+  const handleCapitalizeFirst = () => {
+    const newText = inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
+    setInputText(newText);
+  };
 
   return (
     <div className="centered-container">
-      <p>Welcome!</p>
-      {showThanks && <p>Thanks for visiting!</p>}
+      <h2>Welcome!</h2>
+      <textarea
+        value={inputText}
+        onChange={(e) => setInputText(e.target.value)}
+        rows="4"
+        cols="40"
+        placeholder="Type something..."
+      />
+
+      <div className="button-group">
+        <button onClick={handleRemove}>Remove</button>
+        <button onClick={handleUpperCase}>UpperCase</button>
+        <button onClick={handleLowerCase}>LowerCase</button>
+        <button onClick={handleCapitalizeFirst}>CapitalizeFirst</button>
+      </div>
+
+      <p><strong>Output:</strong> {delayedText}</p>
+      <p><strong>Character Length:</strong> {inputText.length}</p>
+
     </div>
   );
 }
 
-export default WelcomeMessage;
+export default App;
