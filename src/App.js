@@ -1,10 +1,10 @@
 import React from 'react';
-import EmployeeList from './EmployeeList';
+import FactorialComponent from './Factorial';
 
 function App() {
   return (
     <div className="App">
-      <EmployeeList />
+      <FactorialComponent />
     </div>
   );
 }
