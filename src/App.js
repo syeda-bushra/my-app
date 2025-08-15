@@ -1,13 +1,12 @@
-import React from 'react';
-import FactorialComponent from './Factorial';
+import Employeeinfo from './Employeeinfo';
+
 
 function App() {
   return (
-    <div className="App">
-      <FactorialComponent />
+    <div>
+     
+      <Employeeinfo />
     </div>
   );
 }
-
 export default App;
-
