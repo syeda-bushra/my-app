@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>React App</title>
+    
+    <title>Login Form</title>
+   
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class= "login-container" >
+      <h2>Login Form</h2>
+      <form id="loginForm">
+        <input type = "email" id = "email" placeholder = "Enter your email" Required>
+        <input type = "password" id = "password" placeholder = "Enter Your Password" Required>
+        <button type = "submit" >Login</button>
+         <style>input {
+                       display: block;
+                       margin-bottom: 15px;
+                       width: 15%;
+                       padding: 10px; }
+         </style>
+
+      </form>
+    </div>
+    <script src="LoginForm.js"></script>
   </body>
 </html>
 
