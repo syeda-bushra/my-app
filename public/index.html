@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+    <meta charset="UTF-8">
     <title>Login Form</title>
+    
+    <style>
+    
+      body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .login-container {
+      background-color: #4358e1;
+      padding: 120px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center; 
+    }
+
+    .login-container input {
+      margin: 15px auto;
+      width: 100%;
+      padding: 15px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .login-container button {
+      width: 50%;
+      padding: 15px;
+      font-size: 18px;
+      background-color: #47d347;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      
+      
+    }
+    .login-container h2 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: white;
+      font-size: 34px;
+      margin-bottom: 100px;
+      }
+
+    .login-container button:hover {
+      background-color: #45a049;
+    }
+    
+  </style>
+    
    
   </head>
+  
   <body>
     <div class= "login-container" >
       <h2>Login Form</h2>
       <form id="loginForm">
+        <input type = "name" id = "name" placeholder = "Enter your name" Required>
         <input type = "email" id = "email" placeholder = "Enter your email" Required>
-        <input type = "password" id = "password" placeholder = "Enter Your Password" Required>
+        <input type = "password" id = "password" placeholder = "Enter your Password" Required>
         <button type = "submit" >Login</button>
-         <style>input {
-                       display: block;
-                       margin-bottom: 15px;
-                       width: 15%;
-                       padding: 10px; }
-         </style>
+        
 
       </form>
     </div>
