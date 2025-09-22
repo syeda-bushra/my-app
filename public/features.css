@@ -8,18 +8,51 @@ body {
   display: flex;   
   justify-content: center;
   align-items: center;
-  border-radius: 6px
+  border-radius: 0;
 }
+
+.navbar .logo img {
+  position: absolute;
+  height: 120px;
+  left:10px;
+  top: -35px;
+  
+  
+}
+
+.top-right {
+  position: absolute;
+  top: 17px;
+  right: 40px;
+  font-weight: light;}
+
 .navbar a {
   color: #f2f2f2;
   padding: 16px 35px;
   text-decoration: none;
+  border-radius: 6px;
 }
 
 .navbar a:hover {
   background-color: #4fa4e4;
+  
 }
 
-h2 {
-  padding: 20px;
+
+.feature-list {
+  margin: 50px 0,0,0;
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 2;
+  color: #333;
+  text-align: left; 
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+.navbar a.active {
+  color: #090909;
+ 
 }

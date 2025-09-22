@@ -8,18 +8,32 @@ body {
   display: flex;   
   justify-content: center;
   align-items: center;
-  border-radius: 6px
+  border-radius: 0;
 }
+
+.navbar .logo img {
+  position: absolute;
+  height: 120px;
+  left:10px;
+  top: -35px;
+  
+  
+}
+
+.top-right {
+  position: absolute;
+  top: 17px;
+  right: 40px;
+  font-weight: light;}
+
 .navbar a {
   color: #f2f2f2;
   padding: 16px 35px;
   text-decoration: none;
+  border-radius: 6px;
 }
 
 .navbar a:hover {
   background-color: #4fa4e4;
-}
-
-h2 {
-  padding: 20px;
+  
 }
