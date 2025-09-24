@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  height: auto;
+  min-width: fit-content;
 }
 .navbar {
   background-color: #4358e1;
@@ -9,6 +11,11 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 0;
+  padding: 0 20px
+}
+.navbar-links {
+  display: flex;
+  margin-left: 420px; 
 }
 
 .navbar .logo img {
@@ -16,16 +23,18 @@ body {
   height: 120px;
   left:10px;
   top: -35px;
+  flex:1;
+  
+}
+.top-right {
+  
+  top: 4px;
+  font-weight: light;
+  text-align: right;
+  margin-left: auto;
   
   
 }
-
-.top-right {
-  position: absolute;
-  top: 17px;
-  right: 40px;
-  font-weight: light;}
-
 .navbar a {
   color: #f2f2f2;
   padding: 16px 35px;
@@ -36,4 +45,8 @@ body {
 .navbar a:hover {
   background-color: #4fa4e4;
   
+}
+
+.navbar a.active  {
+  color: #090909;
 }
