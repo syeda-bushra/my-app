@@ -92,7 +92,7 @@ body {
   text-align: center;
   bottom: 0px;
   width: 100%;
-  margin-top: 500px;
+  margin-top: 600px;
   font-size: 12px;
   height: 220px;
   
@@ -136,7 +136,7 @@ body {
   bottom: -1215px; 
   justify-content: center;
   text-align: center;
-  margin: 0 0 -450px 660px;
+  margin: 0 0 -460px 660px;
   white-space: nowrap;
   
   
@@ -247,20 +247,21 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 50px; 
-  margin: 10px auto;
+  margin: auto;
   max-width: 1300px;
 }
 
 .box {
   background-color: #f0f4ff; 
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   width: 400px; 
   font-family: Arial, sans-serif;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   border-radius: 0px;
   position: relative;
   height: 260px;
+  margin: -20px;
 }
 
 
